@@ -20,7 +20,79 @@
 </head>
 <body>
     
-    
+    <header class="header">
+        <div class="container">
+            <h1>Steam Offer Tracker</h1>            
+            <form class="header__form">
+                <label for="search">Search for a game</label>
+                <input type="search" id="search" placeholder="Tomb Rider">
+            </form>
+        </div>
+    </header>
+
+    <main>
+        <section class="filters">
+            <div class="container">
+                <form class="filters__form">
+                    <label for="order-by">Ordernar por:</label>
+                    <select id="order-by">
+                        <option value="highest-discount">Mayor descuento</option>
+                        <option value="lower-price">Menor precio</option>
+                    </select>
+                </form>
+            </div>
+        </section>
+
+        <section class="results">
+            <div class="container">
+
+                <h2>Latest offers</h2>
+
+                <div class="results__grid">
+                    <div class="game-box">
+                        <img src="./assets/games-img/header.jpg" alt="game image">
+                    </div>
+                    <div class="game-box">
+                        <img src="./assets/games-img/header.jpg" alt="game image">
+                    </div>
+                    <div class="game-box">
+                        <img src="./assets/games-img/header.jpg" alt="game image">
+                    </div>
+                    <div class="game-box">
+                        <img src="./assets/games-img/header.jpg" alt="game image">
+                    </div>
+                    <div class="game-box">
+                        <img src="./assets/games-img/header.jpg" alt="game image">
+                    </div>
+                </div>
+
+                <h2>New releases</h2>
+
+                <div class="results__grid">
+                    <div class="game-box">
+                        <img src="./assets/games-img/header.jpg" alt="game image">
+                    </div>
+                    <div class="game-box">
+                        <img src="./assets/games-img/header.jpg" alt="game image">
+                    </div>
+                    <div class="game-box">
+                        <img src="./assets/games-img/header.jpg" alt="game image">
+                    </div>
+                    <div class="game-box">
+                        <img src="./assets/games-img/header.jpg" alt="game image">
+                    </div>
+                    <div class="game-box">
+                        <img src="./assets/games-img/header.jpg" alt="game image">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Diseño y desarrollo: <a href="mailto:marcodamianperez@gmail.com">Marco Pérez</a></p>
+    </footer>
     
 </body>
 </html>

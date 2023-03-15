@@ -1,7 +1,23 @@
+/* Variables */
 :root {
     --color-white: #fff;
 }
 
+/* Utility classes */
+.u-container {
+    max-width: 85%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.u-center-element-absolute {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Main styles */
 *,
 ::before,
 ::after {
@@ -12,6 +28,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -22,7 +39,7 @@ body {
     background-image: url(./../assets/bg-steam-logo.jpg);
     background-position: center;
     background-size: cover;
-    height: 60vh;
+    height: 90vh;
     text-align: center;
     position: relative;
 }
@@ -35,10 +52,7 @@ body {
 
 .header__wrapper {
     width: 85%;
-    position: absolute;
     top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
     gap: 5rem;
@@ -72,3 +86,43 @@ body {
     border: none;
     border-radius: .5rem;
 }
+
+/* Scroll down button */
+.scroll-down-btn {
+    height: 6rem;
+    width: 3.5rem;
+    top: 90%;
+    border: 2px solid var(--color-white);
+    border-radius: 2rem;
+}
+
+.scroll-down-btn::before,
+.scroll-down-btn::after {
+    content: "";
+    position: absolute;
+    background-color: var(--color-white);
+    width: 3px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.scroll-down-btn::before {
+    height: 1rem;
+}
+
+.scroll-down-btn::after {
+    height: 3px;
+    animation-name: scroll-down-move;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+}
+
+@keyframes scroll-down-move {
+    100% {
+        transform: translate(-50%, 3rem);
+        opacity: 0;
+    }
+}
+
+/* ^^ Finish scroll down button ^^ */

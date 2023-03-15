@@ -28,18 +28,21 @@
 <body>
     
     <header class="header">
-        <div class="header__wrapper">
+        <div class="header__wrapper u-center-element-absolute">
             <h1 class="heading-primary">Steam Offer Tracker</h1>            
             <form class="header__form">
                 <label class="label" for="search">Search for a game</label>
                 <input class="input-text" type="search" id="search" placeholder="Tomb Rider">
             </form>
         </div>
+
+        <!-- Scroll down button -->
+        <a href="./index.html#filters" class="scroll-down-btn u-center-element-absolute"></a>
     </header>
 
     <main>
-        <section class="filters">
-            <div class="container">
+        <section class="filters" id="filters">
+            <div class="u-container">
                 <form class="filters__form">
                     <label for="order-by">Ordernar por:</label>
                     <select id="order-by">
@@ -51,7 +54,7 @@
         </section>
 
         <section class="results">
-            <div class="container">
+            <div class="u-container">
 
                 <h2>Latest offers</h2>
 

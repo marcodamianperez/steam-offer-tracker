@@ -1,15 +1,25 @@
 /* Variables */
 :root {
+    /* Base */
     --color-white: #fff;
-    --color-grey-light: #f7f7f7;
-    --color-grey-dark: #171A21;
+    --color-green: #4DB8BC;
+    --color-offer-green-light: #BEEE11;
+    --color-offer-green-dark: #4c6b22;
+    --color-grey-dark: #344654;
+    --color-grey-light: #738895;
 
+    /* Background */
+    --color-background-grey-light: #f7f7f7;
+    --color-background-grey-dark: #171A21;
+
+    /* Text */
     --color-text-grey: #777;
 }
 
 /* Utility classes */
 .u-container {
-    max-width: 85%;
+    max-width: 120rem;
+    width: 85%;
     margin: 0 auto;
     height: 100%;
 }
@@ -132,8 +142,7 @@ body {
 /* ^^ Finish scroll down button ^^ */
 
 .filters {
-    background-color: var(--color-grey-light);
-    /* background-image: linear-gradient(to right, rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)), url(./../assets/pattern.jpg); */
+    background-color: var(--color-background-grey-light);
     padding: 5rem 0;
 }
 
@@ -150,4 +159,73 @@ body {
     padding: .3rem;
     border-radius: .5rem;
     border-color: var(--color-grey-dark);
+}
+
+.results {
+    background-color: var(--color-background-grey-dark);
+    padding: 5rem 0;
+}
+
+.heading-secondary {
+    color: var(--color-green);
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.results__grid {
+    margin: 3rem 0;
+    display: grid;
+    gap: 5rem;
+}
+
+.game-box__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+.game-box__info {
+    background-image: url(./../assets/bg-price-box.jpg);
+}
+
+.game-box__game {
+    color: var(--color-white);
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+}
+
+.game-box__price {
+    display: flex;
+    align-items: center;
+    height: 3rem;
+}
+
+.game-box__price-item {
+    background-color: var(--color-grey-dark);
+    padding: 0 2rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.game-box__price-item--discount {
+    background-color: var(--color-offer-green-dark);
+    color: var(--color-offer-green-light);
+    font-size: 2rem;
+}
+
+.game-box__price-item--final-price {
+    background-color: var(--color-grey-dark);
+    color: var(--color-offer-green-light);
+    font-size: 1.6rem;
+}
+
+.game-box__price-item--original-price {
+    background-color: var(--color-grey-dark);
+    color: var(--color-grey-light);
+    text-decoration: line-through;
+    font-size: 1.4rem;
 }

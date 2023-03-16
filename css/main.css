@@ -1,6 +1,10 @@
 /* Variables */
 :root {
     --color-white: #fff;
+    --color-grey-light: #f7f7f7;
+    --color-grey-dark: #171A21;
+
+    --color-text-grey: #777;
 }
 
 /* Utility classes */
@@ -36,7 +40,7 @@ body {
 }
 
 .header {
-    background-image: url(./../assets/bg-steam-logo.jpg);
+    background-image: url(./../assets/bg-steam.jpg);
     background-position: center;
     background-size: cover;
     height: 90vh;
@@ -55,7 +59,7 @@ body {
     top: 40%;
     display: flex;
     flex-direction: column;
-    gap: 5rem;
+    gap: 8rem;
 }
 
 .heading-primary {
@@ -74,12 +78,12 @@ body {
     margin: 0 auto;
 }
 
-.label {
+.header-label {
     color: var(--color-white);
     font-size: 1.7rem;
 }
 
-.input-text {
+.header-input-text {
     font-family: inherit;
     font-size: 1.5rem;
     padding: 1rem;
@@ -126,3 +130,24 @@ body {
 }
 
 /* ^^ Finish scroll down button ^^ */
+
+.filters {
+    background-color: var(--color-grey-light);
+    /* background-image: linear-gradient(to right, rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)), url(./../assets/pattern.jpg); */
+    padding: 5rem 0;
+}
+
+.filters__form {
+    color: var(--color-text-grey);
+    font-size: 1.5rem;
+}
+
+.filters-label {
+    margin-right: 2rem;
+}
+
+.filters-input {
+    padding: .3rem;
+    border-radius: .5rem;
+    border-color: var(--color-grey-dark);
+}

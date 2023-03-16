@@ -142,12 +142,12 @@ body {
 /* ^^ Finish scroll down button ^^ */
 
 .filters {
-    background-color: var(--color-background-grey-light);
-    padding: 5rem 0;
+    background-color: var(--color-background-grey-dark);
+    padding-top: 5rem;
 }
 
 .filters__form {
-    color: var(--color-text-grey);
+    color: var(--color-white);
     font-size: 1.5rem;
 }
 
@@ -157,8 +157,8 @@ body {
 
 .filters-input {
     padding: .3rem;
+    border: none;
     border-radius: .5rem;
-    border-color: var(--color-grey-dark);
 }
 
 .results {

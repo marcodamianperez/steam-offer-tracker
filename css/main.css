@@ -280,6 +280,11 @@ body {
     letter-spacing: 1px;
 }
 
+.grid-container {
+    display: grid;
+    gap: 3rem;
+}
+
 .offer__image img {
     width: 100%;
     height: 100%;
@@ -293,7 +298,7 @@ body {
     color: var(--color-white);
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .offer__expiration-date {
@@ -322,4 +327,49 @@ body {
     font-size: 1.6rem;
     text-decoration: line-through;
     color: var(--color-grey-light);
+}
+
+.overview {
+    background-color: var(--color-grey-dark);
+    padding: 2rem;
+}
+
+.overview__title {
+    color: var(--color-white);
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--color-background-grey-dark);
+    position: relative;
+}
+
+.overview__title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom: 3px solid var(--color-green);
+    width: 40%;
+}
+
+.overview__info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: 1.4rem;
+}
+
+.overview__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.overview__label {
+    width: 40%;
+    color: var(--color-text-grey);
+    font-weight: 700;
+}
+
+.overview__value {
+    color: var(--color-white);
 }

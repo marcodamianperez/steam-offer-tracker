@@ -349,7 +349,7 @@ body {
     bottom: 0;
     left: 0;
     border-bottom: 3px solid var(--color-green);
-    width: 40%;
+    width: 30%;
 }
 
 .overview__info {
@@ -372,4 +372,39 @@ body {
 
 .overview__value {
     color: var(--color-white);
+}
+
+.carousel {
+    position: relative;
+}
+
+.carousel__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+.carousel__btn {
+    position: absolute;
+    width: 4rem;
+    height: 100%;
+    border: none;
+    outline: transparent;
+    background-color: transparent;
+    color: var(--color-black);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.carousel__btn--prev {
+    top: 0;
+    left: 0;
+    background-image: linear-gradient();
+}
+
+.carousel__btn--next {
+    top: 0;
+    right: 0;
+    background-image: linear-gradient();
 }

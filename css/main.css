@@ -31,8 +31,12 @@
     transform: translate(-50%, -50%);
 }
 
-.u-margin-bottom {
+.u-margin-bottom-small {
     margin-bottom: 2rem;
+}
+
+.u-margin-bottom-medium {
+    margin-bottom: 4rem;
 }
 
 /* Main styles */
@@ -172,7 +176,7 @@ body {
 }
 
 .results__grid {
-    margin: 3rem 0;
+    /* margin: 3rem 0; */
     display: grid;
     gap: 5rem;
 }
@@ -407,4 +411,9 @@ body {
     top: 0;
     right: 0;
     background-image: linear-gradient();
+}
+
+.overview__description {
+    font-size: 1.4rem;
+    color: var(--color-white);
 }

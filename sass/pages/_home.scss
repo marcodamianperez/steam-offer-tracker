@@ -1,0 +1,124 @@
+.header {
+    background-image: url(./../assets/bg-steam.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    text-align: center;
+    position: relative;
+
+    &__wrapper {
+        width: 85%;
+        top: 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 8rem;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    &-label {
+        color: $color-white;
+        font-size: 1.7rem;
+    }
+
+    &-input-text {
+        font-family: inherit;
+        font-size: 1.5rem;
+        padding: 1rem;
+        border: none;
+        border-radius: .5rem;
+    }
+}
+
+.filters {
+    background-color: $color-background-grey-dark;
+    padding-top: 5rem;
+
+    &__form {
+        color: $color-white;
+        font-size: 1.5rem;
+    }
+
+    &-label {
+        margin-right: 2rem;
+    }
+
+    &-input {
+        padding: .3rem;
+        border: none;
+        border-radius: .5rem;
+    }
+}
+
+
+.results {
+    background-color: $color-background-grey-dark;
+    padding: 5rem 0;
+
+    &__grid {
+        /* margin: 3rem 0; */
+        display: grid;
+        gap: 5rem;
+    }
+}
+
+.game-box {
+    text-decoration: none;
+
+    &__image {
+
+        img {
+            @include image-fit-cover;
+        }
+    }
+
+    &__info {
+        background-image: url(./../assets/bg-price-box.jpg);
+    }
+
+    &__game {
+        color: $color-white;
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
+        text-transform: uppercase;
+    }
+
+    &__price {
+        display: flex;
+        align-items: center;
+        height: 3rem;
+
+        &-item {
+            background-color: $color-grey-dark;
+            padding: 0 1rem;
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+            &--discount {
+                background-color: $color-offer-green-dark;
+                color: $color-offer-green-light;
+                font-size: 2rem;
+            }
+
+            &--final-price {
+                background-color: $color-grey-dark;
+                color: $color-offer-green-light;
+                font-size: 1.6rem;
+            }
+
+            &--original-price {
+                background-color: $color-grey-dark;
+                color: $color-grey-light;
+                text-decoration: line-through;
+                font-size: 1.4rem;
+            }
+        }
+    }
+}

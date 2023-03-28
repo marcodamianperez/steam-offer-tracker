@@ -1,0 +1,30 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.heading-primary {
+    color: $color-white;
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.heading-secondary {
+    color: $color-green;
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.heading-tertiary {
+    font-size: 2rem;
+    color: $color-white;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+}

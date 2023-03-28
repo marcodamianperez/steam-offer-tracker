@@ -1,0 +1,106 @@
+.go-back, .details {
+    padding: 5rem 0;
+    background-color: $color-background-grey-dark;
+}
+
+.grid-container {
+    display: grid;
+    gap: 3rem;
+}
+
+.offer {
+
+    &__image {
+
+        img {
+            @include image-fit-cover;
+        }
+    }
+
+    &__info {
+        background-color: $color-grey-dark;
+        padding: 2rem;
+        color: $color-white;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    &__expiration-date {
+        font-size: 1.4rem;
+    }
+
+    &__percentage {
+        background-color: $color-offer-green-dark;
+        color: $color-offer-green-light;
+        font-size: 2rem;
+        padding: .5rem .8rem;
+        width: fit-content;
+    }
+
+    &__price {
+        display: flex;
+        gap: 2rem;
+        align-items: baseline;
+
+        &--current {
+            font-size: 2rem;
+        }
+
+        &--previous {
+            font-size: 1.6rem;
+            text-decoration: line-through;
+            color: $color-grey-light;
+        }
+    }
+}
+
+.overview {
+    background-color: $color-grey-dark;
+    padding: 2rem;
+
+    &__title {
+        color: $color-white;
+        font-size: 1.6rem;
+        font-weight: 400;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid $color-background-grey-dark;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            border-bottom: 3px solid $color-green;
+            width: 30%;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        font-size: 1.4rem;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__label {
+        width: 40%;
+        color: $color-text-grey;
+        font-weight: 700;
+    }
+
+    &__value {
+        color: $color-white;
+    }
+
+    &__description {
+        font-size: 1.4rem;
+        color: $color-white;
+    }
+}

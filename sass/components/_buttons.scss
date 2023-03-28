@@ -1,0 +1,48 @@
+.scroll-down-btn {
+    height: 6rem;
+    width: 3.5rem;
+    top: 90%;
+    border: 2px solid $color-white;
+    border-radius: 2rem;
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        background-color: $color-white;
+        width: 3px;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &::before {
+        height: 1rem;
+    }
+
+    &::after {
+        height: 3px;
+        animation-name: scroll-down-move;
+        animation-duration: 5000ms;
+        animation-iteration-count: infinite;
+    }
+}
+
+.btn {
+    background-color: $color-green;
+    color: $color-white;
+    border: none;
+    border-radius: .5rem;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+
+    &--icon {
+        display: flex;
+        width: fit-content;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+    }
+}

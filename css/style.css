@@ -1,0 +1,361 @@
+@keyframes scroll-down-move {
+  100% {
+    transform: translate(-50%, 3rem);
+    opacity: 0;
+  }
+}
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.heading-primary {
+  color: #fff;
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.heading-secondary {
+  color: #4DB8BC;
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.heading-tertiary {
+  font-size: 2rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.u-container {
+  max-width: 120rem;
+  width: 85%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.u-center-absolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 2rem;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem;
+}
+
+.scroll-down-btn {
+  height: 6rem;
+  width: 3.5rem;
+  top: 90%;
+  border: 2px solid #fff;
+  border-radius: 2rem;
+}
+.scroll-down-btn::before, .scroll-down-btn::after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  width: 3px;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.scroll-down-btn::before {
+  height: 1rem;
+}
+.scroll-down-btn::after {
+  height: 3px;
+  animation-name: scroll-down-move;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+}
+
+.btn {
+  background-color: #4DB8BC;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+.btn--icon {
+  display: flex;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.carousel {
+  position: relative;
+}
+.carousel__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+}
+.carousel__btn {
+  position: absolute;
+  width: 4rem;
+  height: 100%;
+  border: none;
+  outline: transparent;
+  background-color: transparent;
+  color: #000;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.carousel__btn--prev {
+  top: 0;
+  left: 0;
+  background-image: linear-gradient();
+}
+.carousel__btn--next {
+  top: 0;
+  right: 0;
+  background-image: linear-gradient();
+}
+
+.footer {
+  background-color: #344654;
+  padding: 3rem 0;
+  color: #fff;
+  text-align: center;
+}
+.footer__text {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.author {
+  color: inherit;
+}
+
+.go-back, .details {
+  padding: 5rem 0;
+  background-color: #171A21;
+}
+
+.grid-container {
+  display: grid;
+  gap: 3rem;
+}
+
+.offer__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+}
+.offer__info {
+  background-color: #344654;
+  padding: 2rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.offer__expiration-date {
+  font-size: 1.4rem;
+}
+.offer__percentage {
+  background-color: #4c6b22;
+  color: #BEEE11;
+  font-size: 2rem;
+  padding: 0.5rem 0.8rem;
+  width: fit-content;
+}
+.offer__price {
+  display: flex;
+  gap: 2rem;
+  align-items: baseline;
+}
+.offer__price--current {
+  font-size: 2rem;
+}
+.offer__price--previous {
+  font-size: 1.6rem;
+  text-decoration: line-through;
+  color: #738895;
+}
+
+.overview {
+  background-color: #344654;
+  padding: 2rem;
+}
+.overview__title {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #171A21;
+  position: relative;
+}
+.overview__title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-bottom: 3px solid #4DB8BC;
+  width: 30%;
+}
+.overview__info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-size: 1.4rem;
+}
+.overview__row {
+  display: flex;
+  justify-content: space-between;
+}
+.overview__label {
+  width: 40%;
+  color: #777;
+  font-weight: 700;
+}
+.overview__value {
+  color: #fff;
+}
+.overview__description {
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.header {
+  background-image: url(./../assets/bg-steam.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 90vh;
+  text-align: center;
+  position: relative;
+}
+.header__wrapper {
+  width: 85%;
+  top: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+}
+.header__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 80%;
+  margin: 0 auto;
+}
+.header-label {
+  color: #fff;
+  font-size: 1.7rem;
+}
+.header-input-text {
+  font-family: inherit;
+  font-size: 1.5rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.filters {
+  background-color: #171A21;
+  padding-top: 5rem;
+}
+.filters__form {
+  color: #fff;
+  font-size: 1.5rem;
+}
+.filters-label {
+  margin-right: 2rem;
+}
+.filters-input {
+  padding: 0.3rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.results {
+  background-color: #171A21;
+  padding: 5rem 0;
+}
+.results__grid {
+  /* margin: 3rem 0; */
+  display: grid;
+  gap: 5rem;
+}
+
+.game-box {
+  text-decoration: none;
+}
+.game-box__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+}
+.game-box__info {
+  background-image: url(./../assets/bg-price-box.jpg);
+}
+.game-box__game {
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+}
+.game-box__price {
+  display: flex;
+  align-items: center;
+  height: 3rem;
+}
+.game-box__price-item {
+  background-color: #344654;
+  padding: 0 1rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.game-box__price-item--discount {
+  background-color: #4c6b22;
+  color: #BEEE11;
+  font-size: 2rem;
+}
+.game-box__price-item--final-price {
+  background-color: #344654;
+  color: #BEEE11;
+  font-size: 1.6rem;
+}
+.game-box__price-item--original-price {
+  background-color: #344654;
+  color: #738895;
+  text-decoration: line-through;
+  font-size: 1.4rem;
+}
+
+/*# sourceMappingURL=style.css.map */

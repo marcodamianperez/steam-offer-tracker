@@ -4,3 +4,32 @@
     object-fit: cover;
     vertical-align: middle;
 }
+
+// Media query manager
+/* 
+
+0 to 600px:         actual styles
+600px to 900px:     small
+900px to 1200px:    medium
+1200px +:           large
+
+1em == 16px since em units in media queries are not affected by the root font-size setting and always refers to the font-size from the browser
+
+*/
+@mixin respond($breakpoint) {
+    @if $breakpoint == small {
+        @media (min-width: 37.5em) { //600px
+            @content;
+        }
+    }
+    @if $breakpoint == medium {
+        @media (min-width: 56.25em) { //900px
+            @content;
+        }
+    }
+    @if $breakpoint == large {
+        @media (min-width: 75em) { //1200px
+            @content;
+        }
+    }
+}

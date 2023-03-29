@@ -5,6 +5,11 @@
     border: 2px solid $color-white;
     border-radius: 2rem;
 
+    @include respond(small) {
+        height: 5rem;
+        width: 3rem;
+    }
+
     &::before,
     &::after {
         content: "";
@@ -25,6 +30,10 @@
         animation-name: scroll-down-move;
         animation-duration: 5000ms;
         animation-iteration-count: infinite;
+
+        @include respond(small) {
+        animation-name: scroll-down-move-small;
+        }
     }
 }
 

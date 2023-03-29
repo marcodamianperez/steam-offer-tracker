@@ -4,3 +4,10 @@
         opacity: 0;
     }
 }
+
+@keyframes scroll-down-move-small {
+    100% {
+        transform: translate(-50%, 2rem);
+        opacity: 0;
+    }
+}

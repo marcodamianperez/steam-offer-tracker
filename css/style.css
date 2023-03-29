@@ -15,6 +15,12 @@
     opacity: 0;
   }
 }
+@keyframes scroll-down-move-small {
+  100% {
+    transform: translate(-50%, 2rem);
+    opacity: 0;
+  }
+}
 *,
 ::before,
 ::after {
@@ -107,6 +113,12 @@ body {
   border: 2px solid #fff;
   border-radius: 2rem;
 }
+@media (min-width: 37.5em) {
+  .scroll-down-btn {
+    height: 5rem;
+    width: 3rem;
+  }
+}
 .scroll-down-btn::before, .scroll-down-btn::after {
   content: "";
   position: absolute;
@@ -124,6 +136,11 @@ body {
   animation-name: scroll-down-move;
   animation-duration: 5000ms;
   animation-iteration-count: infinite;
+}
+@media (min-width: 37.5em) {
+  .scroll-down-btn::after {
+    animation-name: scroll-down-move-small;
+  }
 }
 
 .btn {
@@ -316,6 +333,11 @@ body {
   flex-direction: column;
   gap: 8rem;
 }
+@media (min-width: 37.5em) {
+  .header__wrapper {
+    width: 60%;
+  }
+}
 .header__form {
   display: flex;
   flex-direction: column;
@@ -328,6 +350,11 @@ body {
     width: 85%;
   }
 }
+@media (min-width: 37.5em) {
+  .header__form {
+    gap: 2rem;
+  }
+}
 .header-label {
   color: #fff;
   font-size: 1.7rem;
@@ -338,6 +365,12 @@ body {
   padding: 1rem;
   border: none;
   border-radius: 0.5rem;
+}
+@media (min-width: 37.5em) {
+  .header-input-text {
+    font-size: 1.3rem;
+    padding: 0.8rem;
+  }
 }
 
 .filters {
@@ -366,6 +399,12 @@ body {
   display: grid;
   gap: 4rem;
 }
+@media (min-width: 37.5em) {
+  .results__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
 
 .game-box {
   text-decoration: none;
@@ -390,6 +429,12 @@ body {
     font-size: 1.8rem;
   }
 }
+@media (min-width: 37.5em) {
+  .game-box__game {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+}
 .game-box__price {
   display: flex;
   align-items: center;
@@ -398,6 +443,11 @@ body {
 @media (min-width: 25em) {
   .game-box__price {
     height: 3.5rem;
+  }
+}
+@media (min-width: 37.5em) {
+  .game-box__price {
+    height: 2rem;
   }
 }
 .game-box__price-item {
@@ -412,6 +462,11 @@ body {
     padding: 0 1rem;
   }
 }
+@media (min-width: 37.5em) {
+  .game-box__price-item {
+    padding: 0 0.6rem;
+  }
+}
 .game-box__price-item--discount {
   background-color: #4c6b22;
   color: #BEEE11;
@@ -420,6 +475,11 @@ body {
 @media (min-width: 25em) {
   .game-box__price-item--discount {
     font-size: 2.2rem;
+  }
+}
+@media (min-width: 37.5em) {
+  .game-box__price-item--discount {
+    font-size: 1.6rem;
   }
 }
 .game-box__price-item--final-price {
@@ -432,6 +492,11 @@ body {
     font-size: 1.6rem;
   }
 }
+@media (min-width: 37.5em) {
+  .game-box__price-item--final-price {
+    font-size: 1.2rem;
+  }
+}
 .game-box__price-item--original-price {
   background-color: #344654;
   color: #738895;
@@ -441,6 +506,11 @@ body {
 @media (min-width: 25em) {
   .game-box__price-item--original-price {
     font-size: 1.4rem;
+  }
+}
+@media (min-width: 37.5em) {
+  .game-box__price-item--original-price {
+    font-size: 1rem;
   }
 }
 

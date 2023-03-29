@@ -1,6 +1,7 @@
 /* 
 
-0 to 600px:         actual styles
+0 to 400px:         actual styles
+400ox to 600ox:     x-small
 600px to 900px:     small
 900px to 1200px:    medium
 1200px +:           large
@@ -29,19 +30,24 @@ html {
 html {
   font-size: 62.5%;
 }
-@media (min-width: 37.5em) {
+@media (min-width: 25em) {
   html {
     font-size: 68.75%;
   }
 }
-@media (min-width: 56.25em) {
+@media (min-width: 37.5em) {
   html {
     font-size: 75%;
   }
 }
-@media (min-width: 75em) {
+@media (min-width: 56.25em) {
   html {
     font-size: 81.25%;
+  }
+}
+@media (min-width: 75em) {
+  html {
+    font-size: 87.5%;
   }
 }
 

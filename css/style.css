@@ -51,7 +51,7 @@ body {
 
 .heading-primary {
   color: #fff;
-  font-size: 4rem;
+  font-size: 3.5rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 700;
@@ -185,7 +185,7 @@ body {
 }
 
 .go-back, .details {
-  padding: 5rem 0;
+  padding: 4rem 0;
   background-color: #171A21;
 }
 
@@ -220,14 +220,14 @@ body {
 }
 .offer__price {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   align-items: baseline;
 }
 .offer__price--current {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 .offer__price--previous {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   text-decoration: line-through;
   color: #738895;
 }
@@ -294,7 +294,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 .header-label {
@@ -311,7 +311,7 @@ body {
 
 .filters {
   background-color: #171A21;
-  padding-top: 5rem;
+  padding-top: 4rem;
 }
 .filters__form {
   color: #fff;
@@ -328,12 +328,12 @@ body {
 
 .results {
   background-color: #171A21;
-  padding: 5rem 0;
+  padding: 4rem 0;
 }
 .results__grid {
   /* margin: 3rem 0; */
   display: grid;
-  gap: 5rem;
+  gap: 4rem;
 }
 
 .game-box {
@@ -361,7 +361,7 @@ body {
 }
 .game-box__price-item {
   background-color: #344654;
-  padding: 0 1rem;
+  padding: 0 0.6rem;
   height: 100%;
   display: flex;
   align-items: center;
@@ -374,13 +374,13 @@ body {
 .game-box__price-item--final-price {
   background-color: #344654;
   color: #BEEE11;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 .game-box__price-item--original-price {
   background-color: #344654;
   color: #738895;
   text-decoration: line-through;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 
 /*# sourceMappingURL=style.css.map */

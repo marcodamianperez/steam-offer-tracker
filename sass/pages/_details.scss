@@ -1,5 +1,5 @@
 .go-back, .details {
-    padding: 5rem 0;
+    padding: 4rem 0;
     background-color: $color-background-grey-dark;
 }
 
@@ -40,15 +40,15 @@
 
     &__price {
         display: flex;
-        gap: 2rem;
+        gap: 1rem;
         align-items: baseline;
 
         &--current {
-            font-size: 2rem;
+            font-size: 1.8rem;
         }
 
         &--previous {
-            font-size: 1.6rem;
+            font-size: 1.4rem;
             text-decoration: line-through;
             color: $color-grey-light;
         }

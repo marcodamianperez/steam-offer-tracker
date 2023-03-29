@@ -18,7 +18,7 @@
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
     }
 
@@ -38,7 +38,7 @@
 
 .filters {
     background-color: $color-background-grey-dark;
-    padding-top: 5rem;
+    padding-top: 4rem;
 
     &__form {
         color: $color-white;
@@ -59,12 +59,12 @@
 
 .results {
     background-color: $color-background-grey-dark;
-    padding: 5rem 0;
+    padding: 4rem 0;
 
     &__grid {
         /* margin: 3rem 0; */
         display: grid;
-        gap: 5rem;
+        gap: 4rem;
     }
 }
 
@@ -96,7 +96,7 @@
 
         &-item {
             background-color: $color-grey-dark;
-            padding: 0 1rem;
+            padding: 0 .6rem;
             height: 100%;
             display: flex;
             align-items: center;
@@ -110,14 +110,14 @@
             &--final-price {
                 background-color: $color-grey-dark;
                 color: $color-offer-green-light;
-                font-size: 1.6rem;
+                font-size: 1.4rem;
             }
 
             &--original-price {
                 background-color: $color-grey-dark;
                 color: $color-grey-light;
                 text-decoration: line-through;
-                font-size: 1.4rem;
+                font-size: 1.3rem;
             }
         }
     }

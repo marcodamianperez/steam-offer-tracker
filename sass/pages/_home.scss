@@ -20,6 +20,10 @@
         gap: 1.5rem;
         width: 90%;
         margin: 0 auto;
+
+        @include respond(x-small) {
+            width: 85%;
+        }
     }
 
     &-label {
@@ -87,12 +91,20 @@
         font-size: 1.5rem;
         padding: 1rem 2rem;
         text-transform: uppercase;
+
+        @include respond(x-small) {
+            font-size: 1.8rem;
+        }
     }
 
     &__price {
         display: flex;
         align-items: center;
         height: 3rem;
+
+        @include respond(x-small) {
+            height: 3.5rem;
+        }
 
         &-item {
             background-color: $color-grey-dark;
@@ -101,16 +113,28 @@
             display: flex;
             align-items: center;
 
+            @include respond(x-small) {
+                padding: 0 1rem;
+            }
+
             &--discount {
                 background-color: $color-offer-green-dark;
                 color: $color-offer-green-light;
                 font-size: 2rem;
+
+                @include respond(x-small) {
+                    font-size: 2.2rem;
+                }
             }
 
             &--final-price {
                 background-color: $color-grey-dark;
                 color: $color-offer-green-light;
                 font-size: 1.4rem;
+
+                @include respond(x-small) {
+                    font-size: 1.6rem;
+                }
             }
 
             &--original-price {
@@ -118,6 +142,10 @@
                 color: $color-grey-light;
                 text-decoration: line-through;
                 font-size: 1.3rem;
+
+                @include respond(x-small) {
+                    font-size: 1.4rem;
+                }
             }
         }
     }

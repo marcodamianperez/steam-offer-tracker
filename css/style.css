@@ -224,18 +224,38 @@ body {
   padding: 0.5rem 0.8rem;
   width: fit-content;
 }
+@media (min-width: 25em) {
+  .offer__percentage {
+    font-size: 2.2rem;
+  }
+}
 .offer__price {
   display: flex;
   gap: 1rem;
   align-items: baseline;
 }
+@media (min-width: 25em) {
+  .offer__price {
+    gap: 2rem;
+  }
+}
 .offer__price--current {
   font-size: 1.8rem;
+}
+@media (min-width: 25em) {
+  .offer__price--current {
+    font-size: 2rem;
+  }
 }
 .offer__price--previous {
   font-size: 1.4rem;
   text-decoration: line-through;
   color: #738895;
+}
+@media (min-width: 25em) {
+  .offer__price--previous {
+    font-size: 1.6rem;
+  }
 }
 
 .overview {
@@ -303,6 +323,11 @@ body {
   width: 90%;
   margin: 0 auto;
 }
+@media (min-width: 25em) {
+  .header__form {
+    width: 85%;
+  }
+}
 .header-label {
   color: #fff;
   font-size: 1.7rem;
@@ -360,10 +385,20 @@ body {
   padding: 1rem 2rem;
   text-transform: uppercase;
 }
+@media (min-width: 25em) {
+  .game-box__game {
+    font-size: 1.8rem;
+  }
+}
 .game-box__price {
   display: flex;
   align-items: center;
   height: 3rem;
+}
+@media (min-width: 25em) {
+  .game-box__price {
+    height: 3.5rem;
+  }
 }
 .game-box__price-item {
   background-color: #344654;
@@ -372,21 +407,41 @@ body {
   display: flex;
   align-items: center;
 }
+@media (min-width: 25em) {
+  .game-box__price-item {
+    padding: 0 1rem;
+  }
+}
 .game-box__price-item--discount {
   background-color: #4c6b22;
   color: #BEEE11;
   font-size: 2rem;
+}
+@media (min-width: 25em) {
+  .game-box__price-item--discount {
+    font-size: 2.2rem;
+  }
 }
 .game-box__price-item--final-price {
   background-color: #344654;
   color: #BEEE11;
   font-size: 1.4rem;
 }
+@media (min-width: 25em) {
+  .game-box__price-item--final-price {
+    font-size: 1.6rem;
+  }
+}
 .game-box__price-item--original-price {
   background-color: #344654;
   color: #738895;
   text-decoration: line-through;
   font-size: 1.3rem;
+}
+@media (min-width: 25em) {
+  .game-box__price-item--original-price {
+    font-size: 1.4rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

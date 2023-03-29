@@ -36,6 +36,10 @@
         font-size: 2rem;
         padding: .5rem .8rem;
         width: fit-content;
+
+        @include respond(x-small) {
+            font-size: 2.2rem;
+        }
     }
 
     &__price {
@@ -43,14 +47,26 @@
         gap: 1rem;
         align-items: baseline;
 
+        @include respond(x-small) {
+            gap: 2rem;
+        }
+
         &--current {
             font-size: 1.8rem;
+
+            @include respond(x-small) {
+                font-size: 2rem;
+            }
         }
 
         &--previous {
             font-size: 1.4rem;
             text-decoration: line-through;
             color: $color-grey-light;
+
+            @include respond(x-small) {
+                font-size: 1.6rem;
+            }
         }
     }
 }

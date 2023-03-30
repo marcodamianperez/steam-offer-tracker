@@ -1,6 +1,19 @@
-.go-back, .details {
+.go-back {
+    padding-top: 4rem;
+    background-color: $color-background-grey-dark;
+
+    @include respond(small) {
+        padding-top: 3rem;
+    }
+}
+
+.details {
     padding: 4rem 0;
     background-color: $color-background-grey-dark;
+
+    @include respond(small) {
+        padding: 3rem 0;
+    }
 }
 
 .grid-container {
@@ -117,6 +130,10 @@
 
     &__description {
         font-size: 1.4rem;
-        color: $color-white;
+        color: $color-text-light-grey;
+
+        @include respond(small) {
+            font-size: 1.3rem;
+        }
     }
 }

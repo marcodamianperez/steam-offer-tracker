@@ -3,6 +3,10 @@
     width: 85%;
     margin: 0 auto;
     height: 100%;
+
+    @include respond(small) {
+        max-width: 85.714285rem; //1200px
+    }
 }
 
 .u-center-absolute {
@@ -18,4 +22,8 @@
 
 .u-margin-bottom-medium {
     margin-bottom: 4rem;
+
+    @include respond(small) {
+        margin-bottom: 3rem;
+    }
 }

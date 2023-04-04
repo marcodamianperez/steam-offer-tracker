@@ -24,4 +24,12 @@
 
 .author {
     color: inherit;
+
+    @include respond(medium) {
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }

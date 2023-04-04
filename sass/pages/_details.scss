@@ -19,9 +19,20 @@
 .grid-container {
     display: grid;
     gap: 3rem;
+
+    @include respond(medium) {
+        grid-template-columns: 60% 40%;
+        grid-template-areas:    "carousel   offer"
+                                "about      offer"
+                                "about      overview";
+        gap: 2rem
+    }
 }
 
 .offer {
+    @include respond(medium) {
+        grid-area: offer;
+    }
 
     &__image {
 
@@ -37,10 +48,18 @@
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
+
+        @include respond(medium) {
+            padding: 1rem;
+        }
     }
 
     &__expiration-date {
         font-size: 1.4rem;
+
+        @include respond(medium) {
+            font-size: 1rem;
+        }
     }
 
     &__percentage {
@@ -53,6 +72,11 @@
         @include respond(x-small) {
             font-size: 2.2rem;
         }
+
+        @include respond(medium) {
+            font-size: 1.5rem;
+            padding: .2rem .5rem;
+        }
     }
 
     &__price {
@@ -64,11 +88,19 @@
             gap: 2rem;
         }
 
+        @include respond(medium) {
+            gap: 1.5rem;
+        }
+
         &--current {
             font-size: 1.8rem;
 
             @include respond(x-small) {
                 font-size: 2rem;
+            }
+
+            @include respond(medium) {
+                font-size: 1.4rem;
             }
         }
 
@@ -80,6 +112,10 @@
             @include respond(x-small) {
                 font-size: 1.6rem;
             }
+
+            @include respond(medium) {
+                font-size: 1.2rem;
+            }
         }
     }
 }
@@ -88,6 +124,11 @@
     background-color: $color-grey-dark;
     padding: 2rem;
 
+    @include respond(medium) {
+        grid-area: overview;
+        padding: 1rem;
+    }
+
     &__title {
         color: $color-white;
         font-size: 1.6rem;
@@ -95,6 +136,10 @@
         padding-bottom: 1.5rem;
         border-bottom: 1px solid $color-background-grey-dark;
         position: relative;
+
+        @include respond(medium) {
+            font-size: 1.2rem;
+        }
 
         &::after {
             content: "";
@@ -111,6 +156,11 @@
         flex-direction: column;
         gap: 1.5rem;
         font-size: 1.4rem;
+
+        @include respond(medium) {
+            gap: 1rem;
+            font-size: 1rem;
+        }
     }
 
     &__row {
@@ -135,5 +185,16 @@
         @include respond(small) {
             font-size: 1.3rem;
         }
+
+        @include respond(medium) {
+            font-size: 1rem;
+            line-height: 1.5rem;
+        }
+    }
+}
+
+.about {
+    @include respond(medium) {
+        grid-area: about;
     }
 }

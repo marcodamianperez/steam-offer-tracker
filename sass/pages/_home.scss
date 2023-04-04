@@ -16,6 +16,10 @@
         @include respond(small) {
             width: 60%;
         }
+
+        @include respond(medium) {
+            width: 40%;
+        }
     }
 
     &__form {
@@ -31,6 +35,10 @@
 
         @include respond(small) {
             gap: 2rem;
+        }
+
+        @include respond(small) {
+            width: 100%;
         }
     }
 
@@ -60,16 +68,28 @@
     &__form {
         color: $color-white;
         font-size: 1.5rem;
+
+        @include respond(medium) {
+            font-size: 1.3rem;
+        }
     }
 
     &-label {
         margin-right: 2rem;
+
+        @include respond(medium) {
+            margin-right: 1rem;
+        }
     }
 
     &-input {
         padding: .3rem;
         border: none;
         border-radius: .5rem;
+
+        @include respond(medium) {
+            padding: .2rem;
+        }
     }
 }
 
@@ -85,6 +105,11 @@
 
         @include respond(small) {
             grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        @include respond(medium) {
+            grid-template-columns: 1fr 1fr 1fr;
             gap: 2rem;
         }
     }
@@ -117,6 +142,11 @@
         @include respond(small) {
             font-size: 1.2rem;
             padding: 1rem;
+        }
+
+        @include respond(small) {
+            font-size: 1.1rem;
+            padding: 0.7rem;
         }
     }
 
@@ -160,6 +190,10 @@
                 @include respond(small) {
                     font-size: 1.6rem;
                 }
+
+                @include respond(medium) {
+                    font-size: 1.5rem;
+                }
             }
 
             &--final-price {
@@ -173,6 +207,10 @@
 
                 @include respond(small) {
                     font-size: 1.2rem;
+                }
+
+                @include respond(medium) {
+                    font-size: 1rem;
                 }
             }
 
@@ -188,6 +226,10 @@
 
                 @include respond(small) {
                     font-size: 1rem;
+                }
+
+                @include respond(medium) {
+                    font-size: .8rem;
                 }
             }
         }

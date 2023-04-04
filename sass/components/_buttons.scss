@@ -10,6 +10,11 @@
         width: 3rem;
     }
 
+    @include respond(medium) {
+        height: 4rem;
+        width: 2.5rem;
+    }
+
     &::before,
     &::after {
         content: "";
@@ -32,7 +37,7 @@
         animation-iteration-count: infinite;
 
         @include respond(small) {
-        animation-name: scroll-down-move-small;
+            animation-name: scroll-down-move-small;
         }
     }
 }
@@ -46,6 +51,11 @@
     padding: 1rem 2rem;
     font-size: 1.2rem;
     text-transform: uppercase;
+
+    @include respond(medium) {
+        font-size: 1rem;
+        padding: .8rem 1.3rem;
+    }
 
     &--icon {
         display: flex;

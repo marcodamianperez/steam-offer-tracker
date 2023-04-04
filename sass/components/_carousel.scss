@@ -1,5 +1,9 @@
 .carousel {
     position: relative;
+    
+    @include respond(medium) {
+        grid-area: carousel;
+    }
 
     &__image {
 

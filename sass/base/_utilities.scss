@@ -18,6 +18,10 @@
 
 .u-margin-bottom-small {
     margin-bottom: 2rem;
+
+    @include respond(medium) {
+        margin-bottom: 1.5rem;
+    }
 }
 
 .u-margin-bottom-medium {
@@ -25,5 +29,9 @@
 
     @include respond(small) {
         margin-bottom: 3rem;
+    }
+
+    @include respond(medium) {
+        margin-bottom: 2rem;
     }
 }

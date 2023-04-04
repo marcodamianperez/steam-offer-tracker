@@ -75,6 +75,11 @@ body {
   font-weight: 400;
   text-transform: uppercase;
 }
+@media (min-width: 56.25em) {
+  .heading-secondary {
+    font-size: 2rem;
+  }
+}
 
 .heading-tertiary {
   font-size: 2rem;
@@ -106,6 +111,11 @@ body {
 .u-margin-bottom-small {
   margin-bottom: 2rem;
 }
+@media (min-width: 56.25em) {
+  .u-margin-bottom-small {
+    margin-bottom: 1.5rem;
+  }
+}
 
 .u-margin-bottom-medium {
   margin-bottom: 4rem;
@@ -113,6 +123,11 @@ body {
 @media (min-width: 37.5em) {
   .u-margin-bottom-medium {
     margin-bottom: 3rem;
+  }
+}
+@media (min-width: 56.25em) {
+  .u-margin-bottom-medium {
+    margin-bottom: 2rem;
   }
 }
 
@@ -127,6 +142,12 @@ body {
   .scroll-down-btn {
     height: 5rem;
     width: 3rem;
+  }
+}
+@media (min-width: 56.25em) {
+  .scroll-down-btn {
+    height: 4rem;
+    width: 2.5rem;
   }
 }
 .scroll-down-btn::before, .scroll-down-btn::after {
@@ -163,6 +184,12 @@ body {
   font-size: 1.2rem;
   text-transform: uppercase;
 }
+@media (min-width: 56.25em) {
+  .btn {
+    font-size: 1rem;
+    padding: 0.8rem 1.3rem;
+  }
+}
 .btn--icon {
   display: flex;
   width: fit-content;
@@ -173,6 +200,11 @@ body {
 
 .carousel {
   position: relative;
+}
+@media (min-width: 56.25em) {
+  .carousel {
+    grid-area: carousel;
+  }
 }
 .carousel__image img {
   width: 100%;
@@ -208,13 +240,23 @@ body {
   color: #fff;
   text-align: center;
 }
+@media (min-width: 56.25em) {
+  .footer {
+    padding: 1.5rem 0;
+  }
+}
 .footer__text {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-transform: uppercase;
+}
+@media (min-width: 25em) {
+  .footer__text {
+    font-size: 1rem;
+  }
 }
 @media (min-width: 37.5em) {
   .footer__text {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -246,7 +288,19 @@ body {
   display: grid;
   gap: 3rem;
 }
+@media (min-width: 56.25em) {
+  .grid-container {
+    grid-template-columns: 60% 40%;
+    grid-template-areas: "carousel   offer" "about      offer" "about      overview";
+    gap: 2rem;
+  }
+}
 
+@media (min-width: 56.25em) {
+  .offer {
+    grid-area: offer;
+  }
+}
 .offer__image img {
   width: 100%;
   height: 100%;
@@ -261,8 +315,18 @@ body {
   flex-direction: column;
   gap: 1.5rem;
 }
+@media (min-width: 56.25em) {
+  .offer__info {
+    padding: 1rem;
+  }
+}
 .offer__expiration-date {
   font-size: 1.4rem;
+}
+@media (min-width: 56.25em) {
+  .offer__expiration-date {
+    font-size: 1rem;
+  }
 }
 .offer__percentage {
   background-color: #4c6b22;
@@ -276,6 +340,12 @@ body {
     font-size: 2.2rem;
   }
 }
+@media (min-width: 56.25em) {
+  .offer__percentage {
+    font-size: 1.5rem;
+    padding: 0.2rem 0.5rem;
+  }
+}
 .offer__price {
   display: flex;
   gap: 1rem;
@@ -286,12 +356,22 @@ body {
     gap: 2rem;
   }
 }
+@media (min-width: 56.25em) {
+  .offer__price {
+    gap: 1.5rem;
+  }
+}
 .offer__price--current {
   font-size: 1.8rem;
 }
 @media (min-width: 25em) {
   .offer__price--current {
     font-size: 2rem;
+  }
+}
+@media (min-width: 56.25em) {
+  .offer__price--current {
+    font-size: 1.4rem;
   }
 }
 .offer__price--previous {
@@ -304,10 +384,21 @@ body {
     font-size: 1.6rem;
   }
 }
+@media (min-width: 56.25em) {
+  .offer__price--previous {
+    font-size: 1.2rem;
+  }
+}
 
 .overview {
   background-color: #344654;
   padding: 2rem;
+}
+@media (min-width: 56.25em) {
+  .overview {
+    grid-area: overview;
+    padding: 1rem;
+  }
 }
 .overview__title {
   color: #fff;
@@ -316,6 +407,11 @@ body {
   padding-bottom: 1.5rem;
   border-bottom: 1px solid #171A21;
   position: relative;
+}
+@media (min-width: 56.25em) {
+  .overview__title {
+    font-size: 1.2rem;
+  }
 }
 .overview__title::after {
   content: "";
@@ -330,6 +426,12 @@ body {
   flex-direction: column;
   gap: 1.5rem;
   font-size: 1.4rem;
+}
+@media (min-width: 56.25em) {
+  .overview__info {
+    gap: 1rem;
+    font-size: 1rem;
+  }
 }
 .overview__row {
   display: flex;
@@ -350,6 +452,18 @@ body {
 @media (min-width: 37.5em) {
   .overview__description {
     font-size: 1.3rem;
+  }
+}
+@media (min-width: 56.25em) {
+  .overview__description {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width: 56.25em) {
+  .about {
+    grid-area: about;
   }
 }
 
@@ -373,6 +487,11 @@ body {
     width: 60%;
   }
 }
+@media (min-width: 56.25em) {
+  .header__wrapper {
+    width: 40%;
+  }
+}
 .header__form {
   display: flex;
   flex-direction: column;
@@ -388,6 +507,11 @@ body {
 @media (min-width: 37.5em) {
   .header__form {
     gap: 2rem;
+  }
+}
+@media (min-width: 37.5em) {
+  .header__form {
+    width: 100%;
   }
 }
 .header-label {
@@ -416,13 +540,28 @@ body {
   color: #fff;
   font-size: 1.5rem;
 }
+@media (min-width: 56.25em) {
+  .filters__form {
+    font-size: 1.3rem;
+  }
+}
 .filters-label {
   margin-right: 2rem;
+}
+@media (min-width: 56.25em) {
+  .filters-label {
+    margin-right: 1rem;
+  }
 }
 .filters-input {
   padding: 0.3rem;
   border: none;
   border-radius: 0.5rem;
+}
+@media (min-width: 56.25em) {
+  .filters-input {
+    padding: 0.2rem;
+  }
 }
 
 .results {
@@ -437,6 +576,12 @@ body {
 @media (min-width: 37.5em) {
   .results__grid {
     grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+@media (min-width: 56.25em) {
+  .results__grid {
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
   }
 }
@@ -468,6 +613,12 @@ body {
   .game-box__game {
     font-size: 1.2rem;
     padding: 1rem;
+  }
+}
+@media (min-width: 37.5em) {
+  .game-box__game {
+    font-size: 1.1rem;
+    padding: 0.7rem;
   }
 }
 .game-box__price {
@@ -517,6 +668,11 @@ body {
     font-size: 1.6rem;
   }
 }
+@media (min-width: 56.25em) {
+  .game-box__price-item--discount {
+    font-size: 1.5rem;
+  }
+}
 .game-box__price-item--final-price {
   background-color: #344654;
   color: #BEEE11;
@@ -530,6 +686,11 @@ body {
 @media (min-width: 37.5em) {
   .game-box__price-item--final-price {
     font-size: 1.2rem;
+  }
+}
+@media (min-width: 56.25em) {
+  .game-box__price-item--final-price {
+    font-size: 1rem;
   }
 }
 .game-box__price-item--original-price {
@@ -546,6 +707,11 @@ body {
 @media (min-width: 37.5em) {
   .game-box__price-item--original-price {
     font-size: 1rem;
+  }
+}
+@media (min-width: 56.25em) {
+  .game-box__price-item--original-price {
+    font-size: 0.8rem;
   }
 }
 
